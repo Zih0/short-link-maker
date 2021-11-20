@@ -1,7 +1,7 @@
 const express = require('express');
-const { redirectUrl } = require('../controllers/redirect.controller');
+const redirectController = require('../controllers/redirect.controller');
 const router = express.Router();
 
-router.get('/:code', redirectUrl);
+router.get('/:code', redirectController.redirectUrl);
 
 module.exports = router;

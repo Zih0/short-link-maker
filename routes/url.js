@@ -1,8 +1,8 @@
 const express = require('express');
-const { shortenUrl } = require('../controllers/url.controller');
+const urlController = require('../controllers/url.controller');
 
 const router = express.Router();
 
-router.post('/shorten', shortenUrl);
+router.post('/shorten', urlController.shortenUrl);
 
 module.exports = router;
